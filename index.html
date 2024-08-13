@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reprodutor de Vídeos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reprodutor de Vídeos</h1>
+        
+        <!-- Área de Busca -->
+        <input type="text" id="search" placeholder="Buscar vídeos..." onkeyup="searchVideos()">
+        
+        <!-- Lista de Vídeos -->
+        <div id="videoList" class="video-list">
+            <div class="video-item" data-title="Video 1">
+                <h3>Controle de Qualidade e Cadastros</h3>
+                <video controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+            <!-- <div class="video-item" data-title="Video 2">
+                <h3>Video 2</h3>
+                <video controls>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div> -->
+            <!-- Adicione mais vídeos conforme necessário -->
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
